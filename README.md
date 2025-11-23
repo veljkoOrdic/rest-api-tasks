@@ -51,3 +51,16 @@ The API will be available at:
 ```bash
 http://localhost:3000
 ```
+
+Run 2e2 test
+```bash
+npm test
+```
+
+Docker build and run
+```bash
+docker build -t tasks-api .
+
+# run with .env file (that already exist)
+docker run --env-file .env -p 3000:3000 tasks-api
+```
